@@ -1,9 +1,21 @@
 import React, { useState } from "react";
-import menu from "./Data";
-import PuddingList from "./PuddingList";
+import items from "./Data";
+import Menu from "./Menu";
+import Categories from "./Categories";
 
 function App() {
-  return <h2>Menu setup</h2>;
+  const [menuItems, setMenuItems] = useState(items);
+  const [categoryItems, setCategoryItems] = useState([]);
+
+  return (
+    <main>
+      <section>
+        <div></div>
+      </section>
+      <h1 className="title">Nossos Pudins</h1>
+      <Categories />
+      <Menu items={menuItems} />
+    </main>
+  );
 }
-console.log(menu);
 export default App;

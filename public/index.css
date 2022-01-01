@@ -71,7 +71,12 @@ ul {
   list-style-type: none;
 }
 a {
+  font-size: 1.5rem;
   text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  color: darkcyan;
 }
 h1,
 h2,
@@ -83,7 +88,8 @@ h4 {
   margin-bottom: 0.75rem;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin-top: 10rem;
 }
 h2 {
   font-size: 2rem;
@@ -195,8 +201,8 @@ Menu
   object-fit: cover;
   height: 200px;
   width: 100%;
-  border: 0.25rem solid var(--clr-gold);
-  border-radius: var(--radius);
+  border: 0.25rem solid #f06c9b;
+  border-radius: 15px;
   display: block;
 }
 .item-info header {
@@ -208,7 +214,7 @@ Menu
   margin-bottom: 0.5rem;
 }
 .price {
-  color: var(--clr-gold);
+  color: #f06c9b;
 
   white-space: nowrap;
 }
@@ -235,4 +241,44 @@ Menu
   .photo {
     height: 150px;
   }
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #96c9dc;
+  opacity: 0.95;
+  padding: 10px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.navbar ul li {
+  margin-right: 2rem;
+}
+.navbar ul li a {
+  padding: 1.5em;
+  margin: -1.5em;
+}
+.logo {
+  margin-left: 5rem;
+}
+
+.logo-img {
+  size: 10px;
+  height: 6rem;
+
+  filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white)
+    drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white);
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import items from "./Data";
 import Menu from "./Menu";
 import Categories from "./Categories";
+import Navbar from "./Navbar";
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
@@ -9,9 +10,7 @@ function App() {
 
   return (
     <main>
-      <section>
-        <div></div>
-      </section>
+      <Navbar />
       <h1 className="title">Nossos Pudins</h1>
       <Categories />
       <Menu items={menuItems} />

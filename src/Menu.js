@@ -16,7 +16,7 @@ const Menu = ({ items }) => {
             <div className="item-info">
               <header>
                 <h4>
-                  {title} {stock == 0 ? "(Indisp.)" : " "}
+                  {title} {stock == 0 ? "(Indisponível)" : " "}
                 </h4>
                 <h4 className="price">R$ {price}</h4>
               </header>

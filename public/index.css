@@ -228,8 +228,15 @@ Menu
   padding-top: 1rem;
 }
 
-.navbar ul {
+.nav-items {
   display: none;
+}
+.nav-items-show {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3rem;
+  gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -246,9 +253,13 @@ Menu
     display: none;
   }
 
-  .navbar ul {
+  .nav-items {
     display: inline-flex;
     margin-right: 1rem;
+  }
+
+  .logo-img {
+    margin-left: 5rem;
   }
 }
 
@@ -273,18 +284,18 @@ Menu
   position: fixed;
   width: 100vw;
   top: 0;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 75px;
+  padding-left: 75px;
   z-index: 100;
 }
 
 .navbar ul li {
   margin-right: 2rem;
 }
-.navbar ul li a {
+/* .navbar ul li a {
   padding: 1.5em;
   margin: -1.5em;
-}
+} */
 .logo {
   margin-left: -5rem;
 }

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
+  const [activeMenu, setActiveMenu] = useState(true);
+  const setMode = () => {
+    setActiveMenu(!activeMenu);
+  };
   return (
     <div>
       <nav className="nav">
@@ -12,7 +16,8 @@ function Navbar() {
               <img className="logo-img" src="./images/pudimzim-logo.png"></img>
             </a>
           </div>
-          <ul className="nav-items">
+
+          <ul className={activeMenu ? "nav-items" : "nav-items-show"}>
             <li>
               <a href="#">Cardápio</a>
             </li>
@@ -22,10 +27,16 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#">Galeria</a>
+              <a href="#">Contato</a>
             </li>
           </ul>
-          <FontAwesomeIcon className="hamburger" icon={faBars} />
+
+          <FontAwesomeIcon
+            className="hamburger"
+            id="hamburger"
+            icon={activeMenu ? faBars : faTimes}
+            onClick={setMode}
+          />
         </div>
       </nav>
     </div>

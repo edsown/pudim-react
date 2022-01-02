@@ -104,6 +104,7 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -131,9 +132,13 @@ p {
 
 /* section */
 .section {
-  width: 90vw;
-  margin: 0 auto;
+  width: 100vw;
+  margin: 0;
   max-width: var(--max-width);
+}
+.hamburger {
+  font-size: 2rem;
+  margin-right: -5rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -223,6 +228,10 @@ Menu
   padding-top: 1rem;
 }
 
+.navbar ul {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .menu-item {
     grid-template-columns: 225px 1fr;
@@ -232,7 +241,17 @@ Menu
   .photo {
     height: 175px;
   }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar ul {
+    display: inline-flex;
+    margin-right: 1rem;
+  }
 }
+
 @media screen and (min-width: 1200px) {
   .section-center {
     width: 95vw;
@@ -259,11 +278,6 @@ Menu
   z-index: 100;
 }
 
-.navbar ul {
-  display: inline-flex;
-  margin-right: 1rem;
-}
-
 .navbar ul li {
   margin-right: 2rem;
 }
@@ -272,7 +286,7 @@ Menu
   margin: -1.5em;
 }
 .logo {
-  margin-left: 5rem;
+  margin-left: -5rem;
 }
 
 .logo-img {

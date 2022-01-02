@@ -76,7 +76,7 @@ const menu = [
     category: "Mais Pedidos",
     img: "./images/pudim-morango.jfif",
     description:
-      "Pudim de leite, feito com leite integral, compota de morangos, ovos e leite condensado integral, coberto por caramelo de açúcar e geleia de morango Queensberry™.",
+      "Pudim de leite, feito com leite integral, compota de morangos, ovos e leite condensado integral, coberto por caramelo de açúcar e geleia de morango.",
     stock: 0,
   },
   {

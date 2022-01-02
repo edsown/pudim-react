@@ -245,7 +245,14 @@ Menu
   padding-bottom: 30px;
   margin-left: 0rem;
 }
-
+.footer {
+  width: 100%;
+  background-color: #f06c9b;
+  color: whitesmoke;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
 @media screen and (min-width: 768px) {
   .menu-item {
     grid-template-columns: 225px 1fr;

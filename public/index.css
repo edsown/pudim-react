@@ -231,12 +231,19 @@ Menu
 .nav-items {
   display: none;
 }
+
+.navbar {
+  display: flex;
+}
 .nav-items-show {
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 3rem;
   gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 0rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -276,6 +283,7 @@ Menu
 /* NAVBAR */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   background-color: #96c9dc;

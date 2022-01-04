@@ -7,19 +7,15 @@ function Navbar() {
   const setMode = () => {
     setActiveMenu(!activeMenu);
   };
+
   return (
     <div>
       <nav className="nav">
         <div className="navbar">
           <div className="logo">
-            <a href="#">
-              <Link to="/">
-                <img
-                  className="logo-img"
-                  src="./images/pudimzim-logo.png"
-                ></img>
-              </Link>
-            </a>
+            <Link to="/">
+              <img className="logo-img" src="./images/pudimzim-logo.png"></img>
+            </Link>
           </div>
 
           <ul className={activeMenu ? "nav-items" : "nav-items-show"}>

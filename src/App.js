@@ -4,19 +4,22 @@ import Menu from "./Menu";
 import Categories from "./Categories";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Contact from "./Contact";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
   const [categoryItems, setCategoryItems] = useState([]);
 
   return (
-    <main>
+    <Router>
       <Navbar />
-      <h1 className="title">Nossos Pudins</h1>
-      <Categories />
-      <Menu items={menuItems} />
+      <Routes>
+        <Route path="/contato" element={<Contact />} />
+        <Route path="/" element={<Menu items={menuItems} />} />
+      </Routes>
       <Footer />
-    </main>
+    </Router>
   );
 }
 export default App;

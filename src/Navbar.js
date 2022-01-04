@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   const [activeMenu, setActiveMenu] = useState(true);
   const setMode = () => {
@@ -13,21 +13,23 @@ function Navbar() {
         <div className="navbar">
           <div className="logo">
             <a href="#">
-              <img className="logo-img" src="./images/pudimzim-logo.png"></img>
+              <Link to="/">
+                <img
+                  className="logo-img"
+                  src="./images/pudimzim-logo.png"
+                ></img>
+              </Link>
             </a>
           </div>
 
           <ul className={activeMenu ? "nav-items" : "nav-items-show"}>
             <li>
-              <a href="#">Cardápio</a>
+              <Link to="/contato">Contato</Link>
             </li>
             <li>
               <a target="_blank" href="http://instagram.com/pudim.zim2020">
                 Instagram
               </a>
-            </li>
-            <li>
-              <a href="#">Contato</a>
             </li>
           </ul>
 

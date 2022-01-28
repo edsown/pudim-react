@@ -1,1 +1,1 @@
-# pudimzim.vercel.app
+# http://pudimzim.vercel.app

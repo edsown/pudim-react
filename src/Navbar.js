@@ -23,7 +23,11 @@ function Navbar() {
               <Link to="/contato">Contato</Link>
             </li>
             <li>
-              <a target="_blank" href="http://instagram.com/pudim.zim2020">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="http://instagram.com/pudim.zim2020"
+              >
                 Instagram
               </a>
             </li>

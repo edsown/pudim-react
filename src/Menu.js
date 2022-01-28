@@ -12,13 +12,13 @@ const Menu = ({ items }) => {
             <article
               key={id}
               className="menu-item"
-              style={stock == 0 ? { filter: "grayscale(100%)" } : {}}
+              style={stock === 0 ? { filter: "grayscale(100%)" } : {}}
             >
               <img src={img} alt={title} className="photo" />
               <div className="item-info">
                 <header>
                   <h4>
-                    {title} {stock == 0 ? "(Indisponível)" : " "}
+                    {title} {stock === 0 ? "(Indisponível)" : " "}
                   </h4>
                   <h4 className="price">R$ {price}</h4>
                 </header>

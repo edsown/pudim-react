@@ -14,7 +14,11 @@ function Navbar() {
         <div className="navbar">
           <div className="logo">
             <Link to="/">
-              <img className="logo-img" src="./images/pudimzim-logo.png"></img>
+              <img
+                className="logo-img"
+                alt="logo"
+                src="./images/pudimzim-logo.png"
+              ></img>
             </Link>
           </div>
 
